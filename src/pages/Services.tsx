@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@/components/Layout';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -8,7 +7,6 @@ import CallToAction from '@/components/CallToAction';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Check } from 'lucide-react';
 
-// Gallery images
 const galleryImages = [
   {
     id: "img1",
@@ -151,21 +149,15 @@ const servicesData = [
 ];
 
 const Services = () => {
-  const [activeService, setActiveService] = useState(servicesData[0]);
-
   return (
     <Layout>
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 md:px-8 bg-gradient-construction overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
-                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
+            alt="Construction background"
+            className="w-full h-full object-cover"
+          />
         </div>
         
         <div className="container mx-auto relative z-10">
@@ -184,7 +176,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Services Overview */}
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -212,7 +203,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Detailed Services */}
       <section className="py-20 px-4 md:px-8 bg-gray-50" id="detailed-services">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -281,7 +271,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Project Gallery */}
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -298,7 +287,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Testimonials */}
       <section className="py-20 px-4 md:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -334,7 +322,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Process */}
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -348,7 +335,6 @@ const Services = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Step 1 */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-construction-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-construction-100 rounded-full flex items-center justify-center">
                 <span className="text-construction-500 text-4xl font-bold relative top-6 left-6">1</span>
@@ -361,7 +347,6 @@ const Services = () => {
               </div>
             </div>
             
-            {/* Step 2 */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-construction-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-construction-100 rounded-full flex items-center justify-center">
                 <span className="text-construction-500 text-4xl font-bold relative top-6 left-6">2</span>
@@ -374,7 +359,6 @@ const Services = () => {
               </div>
             </div>
             
-            {/* Step 3 */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-construction-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-construction-100 rounded-full flex items-center justify-center">
                 <span className="text-construction-500 text-4xl font-bold relative top-6 left-6">3</span>
@@ -387,7 +371,6 @@ const Services = () => {
               </div>
             </div>
             
-            {/* Step 4 */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-construction-lg transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-construction-100 rounded-full flex items-center justify-center">
                 <span className="text-construction-500 text-4xl font-bold relative top-6 left-6">4</span>
@@ -403,7 +386,6 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Call to Action */}
       <CallToAction
         title="Ready to Start Your Construction Project?"
         description="Contact Gentles Construction today for a free consultation and quote on any of our services."

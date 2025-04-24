@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import StatsCounter from '@/components/StatsCounter';
@@ -8,17 +7,13 @@ import CallToAction from '@/components/CallToAction';
 const AboutUs = () => {
   return (
     <Layout>
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 md:px-8 bg-gradient-construction overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
-                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
+            alt="Construction background"
+            className="w-full h-full object-cover"
+          />
         </div>
         
         <div className="container mx-auto relative z-10">
@@ -37,7 +32,6 @@ const AboutUs = () => {
         </div>
       </section>
       
-      {/* Company History */}
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -75,7 +69,6 @@ const AboutUs = () => {
         </div>
       </section>
       
-      {/* Jason Profile */}
       <CurvedSection className="py-24 px-4 md:px-8 bg-gray-50" bgColor="gray-50">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
@@ -109,7 +102,6 @@ const AboutUs = () => {
         </div>
       </CurvedSection>
       
-      {/* Stats Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -121,7 +113,6 @@ const AboutUs = () => {
         </div>
       </section>
       
-      {/* Our Values */}
       <section className="py-20 px-4 md:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -181,8 +172,9 @@ const AboutUs = () => {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-construction-lg transition-all duration-300 hover:-translate-y-1">
               <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mb-6">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path>
-                  <path d="m9 12 2 2 4-4"></path>
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3">Safety</h3>
@@ -211,8 +203,7 @@ const AboutUs = () => {
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  <path d="M22 21v-2a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3">Client Focus</h3>
@@ -224,7 +215,6 @@ const AboutUs = () => {
         </div>
       </section>
       
-      {/* Certifications */}
       <section className="py-20 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -258,7 +248,6 @@ const AboutUs = () => {
         </div>
       </section>
       
-      {/* Call to Action */}
       <CallToAction
         title="Ready to Work With Us?"
         description="Contact Gentles Construction today for a free consultation and quote on your next construction project."

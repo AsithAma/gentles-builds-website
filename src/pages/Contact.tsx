@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import ContactForm from '@/components/ContactForm';
@@ -10,17 +9,13 @@ const Contact = () => {
   
   return (
     <Layout>
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 md:px-8 bg-gradient-construction overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <defs>
-              <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
-                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
+            alt="Construction background"
+            className="w-full h-full object-cover"
+          />
         </div>
         
         <div className="container mx-auto relative z-10">
@@ -39,11 +34,9 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Contact Info Section */}
       <section className="py-16 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Address */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
               <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin size={28} />
@@ -54,7 +47,6 @@ const Contact = () => {
               </p>
             </div>
             
-            {/* Phone */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
               <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Phone size={28} />
@@ -68,7 +60,6 @@ const Contact = () => {
               </p>
             </div>
             
-            {/* Email */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
               <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Mail size={28} />
@@ -82,7 +73,6 @@ const Contact = () => {
               </p>
             </div>
             
-            {/* Working Hours */}
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
               <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Clock size={28} />
@@ -99,11 +89,9 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Map and Form Section */}
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
             <div>
               <div className="mb-10">
                 <div className="inline-block bg-construction-100/80 text-construction-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -118,7 +106,6 @@ const Contact = () => {
               <ContactForm />
             </div>
             
-            {/* Google Map */}
             <div>
               <div className="mb-10">
                 <div className="inline-block bg-construction-100/80 text-construction-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -136,7 +123,6 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
       <section className="py-16 px-4 md:px-8">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
