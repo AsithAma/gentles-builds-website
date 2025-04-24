@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -149,6 +149,8 @@ const servicesData = [
 ];
 
 const Services = () => {
+  const [activeService, setActiveService] = useState(servicesData[0]);
+  
   return (
     <Layout>
       <section className="relative pt-32 pb-20 px-4 md:px-8 bg-gradient-construction overflow-hidden">
