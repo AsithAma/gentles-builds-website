@@ -155,7 +155,7 @@ const Services = () => {
     <Layout>
       <section className="relative pt-32 pb-20 px-4 md:px-8 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20"></div>
           <img 
             src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
             alt="Construction background"
@@ -173,7 +173,7 @@ const Services = () => {
         </div>
       </section>
       
-      <section className="py-20 px-4 md:px-8">
+      <section className="py-20 px-4 md:px-8 bg-gray-50">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-block bg-construction-100/80 text-construction-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
@@ -181,7 +181,7 @@ const Services = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Construction Services</h2>
             <p className="text-gray-600">
-              Gentles Construction Ltd offer a wide range of services, from home extensions, new builds, loft conversions to landscape gardening and brickwork. All fully insured.
+              Expert construction services for all your needs, from home extensions to commercial buildings.
             </p>
           </div>
           
@@ -200,7 +200,7 @@ const Services = () => {
         </div>
       </section>
       
-      <section className="py-20 px-4 md:px-8 bg-gray-50" id="detailed-services">
+      <section className="py-20 px-4 md:px-8" id="detailed-services">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-block bg-construction-100/80 text-construction-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
