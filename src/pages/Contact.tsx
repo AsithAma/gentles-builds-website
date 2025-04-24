@@ -9,8 +9,9 @@ const Contact = () => {
   
   return (
     <Layout>
-      <section className="relative pt-32 pb-20 px-4 md:px-8 bg-gradient-construction overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+      <section className="relative pt-32 pb-20 px-4 md:px-8 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
           <img 
             src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
             alt="Construction background"
@@ -25,12 +26,6 @@ const Contact = () => {
               Get in touch with our team to discuss your construction needs or request a quote.
             </p>
           </div>
-        </div>
-        
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-20 md:h-32">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
-          </svg>
         </div>
       </section>
       
