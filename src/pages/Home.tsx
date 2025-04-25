@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import HeroCarousel from '@/components/HeroCarousel';
@@ -6,6 +5,7 @@ import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import StatsCounter from '@/components/StatsCounter';
 import CallToAction from '@/components/CallToAction';
+import CertificationsBanner from '@/components/CertificationsBanner';
 import { Building, Check, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -223,6 +223,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      {/* Certifications Banner */}
+      <CertificationsBanner />
       
       {/* Testimonials */}
       <section className="py-20 px-4 md:px-8 bg-gray-50">
