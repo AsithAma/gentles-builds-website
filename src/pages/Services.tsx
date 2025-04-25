@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import ServiceCard from '@/components/ServiceCard';
+import ServiceDetails from '@/components/ServiceDetails';
 import TestimonialCard from '@/components/TestimonialCard';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
