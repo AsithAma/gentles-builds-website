@@ -6,6 +6,7 @@ import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Check } from 'lucide-react';
+import cn from 'classnames';
 
 const galleryImages = [
   {
@@ -207,63 +208,30 @@ const Services = () => {
               Explore Our Services
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Detailed Service Information</h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-12">
               Select a service to learn more about our expertise and offerings in that area.
             </p>
+            
+            <div className="flex flex-wrap justify-center gap-3">
+              {servicesData.map((service) => (
+                <button
+                  key={service.id}
+                  onClick={() => setActiveService(service)}
+                  className={cn(
+                    "px-6 py-3 rounded-full text-sm font-medium transition-all duration-300",
+                    activeService.id === service.id
+                      ? "bg-construction-500 text-white shadow-lg shadow-construction-500/25"
+                      : "bg-white text-gray-600 hover:bg-construction-50"
+                  )}
+                >
+                  {service.title}
+                </button>
+              ))}
+            </div>
           </div>
           
-          <div className="bg-white rounded-xl shadow-xl overflow-hidden">
-            <Tabs defaultValue={servicesData[0].id} className="w-full">
-              <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full bg-gray-100">
-                {servicesData.map((service) => (
-                  <TabsTrigger 
-                    key={service.id} 
-                    value={service.id}
-                    onClick={() => setActiveService(service)}
-                    className="py-4 text-sm md:text-base"
-                  >
-                    {service.title}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-              
-              {servicesData.map((service) => (
-                <TabsContent key={service.id} value={service.id} className="p-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="h-full">
-                      <img 
-                        src={service.image} 
-                        alt={service.title}
-                        className="w-full h-full object-cover"
-                        style={{ maxHeight: '500px' }}
-                      />
-                    </div>
-                    <div className="p-8 md:p-12">
-                      <h3 className="text-2xl md:text-3xl font-bold mb-4">{service.title}</h3>
-                      <p className="text-gray-600 mb-8">
-                        {service.fullDescription}
-                      </p>
-                      
-                      <h4 className="text-lg font-bold mb-4">Features & Benefits</h4>
-                      <ul className="space-y-3 mb-8">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-3">
-                            <div className="bg-construction-500 text-white p-0.5 rounded-full mt-1 flex-shrink-0">
-                              <Check size={16} />
-                            </div>
-                            <span className="text-gray-700">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      
-                      <a href="/contact" className="btn-primary">
-                        Enquire About This Service
-                      </a>
-                    </div>
-                  </div>
-                </TabsContent>
-              ))}
-            </Tabs>
+          <div className="max-w-7xl mx-auto">
+            <ServiceDetails service={activeService} />
           </div>
         </div>
       </section>
