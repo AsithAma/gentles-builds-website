@@ -156,16 +156,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Credentials */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-wrap justify-center gap-10">
-            <img src="https://placehold.co/120x60/333/FFF/svg?text=CREDENTIAL" alt="Certification" className="h-12 grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://placehold.co/120x60/333/FFF/svg?text=CREDENTIAL" alt="Certification" className="h-12 grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://placehold.co/120x60/333/FFF/svg?text=CREDENTIAL" alt="Certification" className="h-12 grayscale hover:grayscale-0 transition-all duration-300" />
-            <img src="https://placehold.co/120x60/333/FFF/svg?text=CREDENTIAL" alt="Certification" className="h-12 grayscale hover:grayscale-0 transition-all duration-300" />
-          </div>
-        </div>
         
         {/* Copyright */}
         <div className="mt-12 text-center text-gray-500 text-sm">

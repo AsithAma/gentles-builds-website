@@ -9,12 +9,12 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "https://images.unsplash.com/photo-1541972289614-0cf03270573a?q=80&w=1700&auto=format&fit=crop&h=900&q=80",
+    image: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&w=800&auto=format&fit=crop&h=900&q=80",
     title: "Building Tomorrow's Legacy",
     subtitle: "Premium construction services in Cardiff and surrounding areas"
   },
   {
-    image: "https://images.unsplash.com/photo-1541970160705-169c7d64fcb6?q=80&w=1700&auto=format&fit=crop&h=900&q=80",
+    image: "https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&w=800&auto=format&fit=crop&h=900&q=80",
     title: "Expert Construction Solutions",
     subtitle: "Over 23 years of experience in building excellence"
   },

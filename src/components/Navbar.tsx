@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Building, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Logo from "../assets/Gentles Construction Logo.avif"
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out',
         isScrolled 
           ? 'bg-white shadow-md py-2' 
-          : 'bg-transparent py-5'
+          : 'bg-white py-5'
       )}
     >
       <div className="container mx-auto px-4">
@@ -42,10 +43,7 @@ const Navbar = () => {
             to="/" 
             className="flex items-center gap-2 text-construction-500 hover:text-construction-600 transition-colors duration-300"
           >
-            <Building size={30} className="text-construction-500" strokeWidth={1.5} />
-            <span className="font-montserrat font-bold text-2xl">
-              Gentles <span className="text-foreground">Construction</span>
-            </span>
+            <img src={Logo} alt="Company Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -97,10 +95,7 @@ const Navbar = () => {
               className="flex items-center gap-2 text-construction-500"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Building size={30} className="text-construction-500" strokeWidth={1.5} />
-              <span className="font-montserrat font-bold text-2xl">
-                Gentles <span className="text-foreground">Construction</span>
-              </span>
+              <img src={Logo} alt="Company Logo" className="h-12 w-auto" />
             </Link>
             <button
               onClick={toggleMobileMenu}
