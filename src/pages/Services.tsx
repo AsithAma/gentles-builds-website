@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import ServiceCard from '@/components/ServiceCard';
@@ -154,6 +153,15 @@ const servicesData = [
 const Services = () => {
   const [activeService, setActiveService] = useState(servicesData[0]);
   
+  const serviceUrls = {
+    "home-extensions": "/services/home-extensions",
+    "loft-conversions": "/services/loft-conversions",
+    "domestic-building": "/services/domestic-building",
+    "commercial-building": "/services/commercial-building",
+    "new-builds": "/services/new-builds",
+    "garden-walls-landscaping": "/services/garden-walls"
+  };
+  
   return (
     <Layout>
       <section className="relative pt-32 pb-20 px-4 md:px-8 overflow-hidden">
@@ -195,7 +203,7 @@ const Services = () => {
                 image={service.image}
                 title={service.title}
                 description={service.shortDescription}
-                link={`#${service.id}`}
+                link={serviceUrls[service.id as keyof typeof serviceUrls]}
                 delay={index * 200}
               />
             ))}

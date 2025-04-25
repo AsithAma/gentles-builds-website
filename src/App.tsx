@@ -11,6 +11,14 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import React from "react";
 
+// Service Pages
+import HomeExtensions from "./pages/HomeExtensions";
+import LoftConversions from "./pages/LoftConversions";
+import DomesticBuilding from "./pages/DomesticBuilding";
+import CommercialBuilding from "./pages/CommercialBuilding";
+import NewBuilds from "./pages/NewBuilds";
+import GardenWalls from "./pages/GardenWalls";
+
 // Create a new QueryClient instance
 const queryClient = new QueryClient();
 
@@ -25,6 +33,15 @@ const App = () => {
               <Route path="/about" element={<AboutUs />} />
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
+              
+              {/* Service Detail Pages */}
+              <Route path="/services/home-extensions" element={<HomeExtensions />} />
+              <Route path="/services/loft-conversions" element={<LoftConversions />} />
+              <Route path="/services/domestic-building" element={<DomesticBuilding />} />
+              <Route path="/services/commercial-building" element={<CommercialBuilding />} />
+              <Route path="/services/new-builds" element={<NewBuilds />} />
+              <Route path="/services/garden-walls" element={<GardenWalls />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Toaster />
