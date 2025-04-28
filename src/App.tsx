@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import React from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Service Pages
 import HomeExtensions from "./pages/HomeExtensions";
@@ -27,6 +28,7 @@ const App = () => {
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
+          <ScrollToTop />
           <TooltipProvider>
             <Routes>
               <Route path="/" element={<Home />} />
