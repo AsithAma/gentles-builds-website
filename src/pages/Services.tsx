@@ -8,11 +8,16 @@ import CallToAction from '@/components/CallToAction';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Check } from 'lucide-react';
 import cn from 'classnames';
+import Home_1 from "../assets/Home 1.avif";
+import New_Build_2 from "../assets/New Builds 2.avif";
+import commercial_building from "../assets/Commercial Building 1.avif";
+import Our_Services from "../assets/Our Services.avif";
+import Garden from "../assets/Garden 6.jpg";
 
 const galleryImages = [
   {
     id: "img1",
-    url: "https://images.unsplash.com/photo-1604748308951-5d8fad4e5205?q=80&w=800&auto=format&fit=crop",
+    url: Home_1,
     alt: "Home Extension Project"
   },
   {
@@ -22,7 +27,7 @@ const galleryImages = [
   },
   {
     id: "img3",
-    url: "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=800&auto=format&fit=crop",
+    url: New_Build_2,
     alt: "New Build Project"
   },
   {
@@ -32,7 +37,7 @@ const galleryImages = [
   },
   {
     id: "img5",
-    url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+    url: Garden ,
     alt: "Commercial Building"
   },
   {
@@ -61,7 +66,7 @@ const servicesData = [
   {
     id: "home-extensions",
     title: "Home Extensions",
-    image: "https://images.unsplash.com/photo-1604748308951-5d8fad4e5205?q=80&w=800&auto=format&fit=crop",
+    image: Home_1,
     shortDescription: "Are you looking for a single extension or double extension, or perhaps, a rear extension or multi-storey extension to expand and liven up your spaces?",
     fullDescription: "At Gentles Construction, we specialize in transforming your existing space with high-quality home extensions. Whether you're looking to add an extra bedroom, expand your kitchen, or create a multi-story addition to your property, our team brings decades of expertise to every project. We handle the complete process from planning and permissions to the final finishes, ensuring a seamless addition that complements your existing structure.",
     features: [
@@ -91,7 +96,7 @@ const servicesData = [
   {
     id: "new-builds",
     title: "New Builds",
-    image: "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=800&auto=format&fit=crop",
+    image: New_Build_2,
     shortDescription: "GCL is proud to offer new builds hire to help you complete and deliver a variety of domestic and commercial new builds projects. As a respected new builds company, we can bring your vision to life.",
     fullDescription: "Building your dream home from the ground up is an exciting journey, and Gentles Construction is here to guide you through every step. Our new build services combine innovative design with quality construction to create homes that are both beautiful and functional. We work closely with you from initial concept to final handover, ensuring your new property meets all your requirements while adhering to the highest industry standards.",
     features: [
@@ -121,7 +126,7 @@ const servicesData = [
   {
     id: "commercial-building",
     title: "Commercial Building",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+    image: commercial_building,
     shortDescription: "Whether you want to see through an entire project from scratch, where you need concerting, brick & mortar laying and structural work done – or need remedial and maintenance work done.",
     fullDescription: "Our commercial building services are designed to meet the unique needs of businesses across Cardiff and surrounding areas. We understand the importance of minimizing disruption to your operations while delivering high-quality construction solutions. From office fit-outs to new commercial premises, our team works efficiently and professionally to create functional, impressive spaces that reflect your brand and business requirements.",
     features: [
@@ -168,7 +173,7 @@ const Services = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
           <img 
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1700&auto=format&fit=crop&h=900&q=80"
+            src= {Our_Services}
             alt="Construction background"
             className="w-full h-full object-cover"
           />

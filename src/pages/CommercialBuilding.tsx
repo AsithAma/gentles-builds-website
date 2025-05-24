@@ -1,19 +1,22 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Check } from 'lucide-react';
+import Commercial_Building_1 from "../assets/Commercial Building 1.avif";
+import Commercial_1 from "../assets/Commercial 1.avif";
+import Commercial_2 from "../assets/Commercial 2.avif";
+import Commercial_3 from "../assets/Commercial 3.avif";
 
 const galleryImages = [
   {
     id: "comm1",
-    url: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+    url: Commercial_2,
     alt: "Commercial Building Project"
   },
   {
     id: "comm2",
-    url: "https://images.unsplash.com/photo-1629207338691-e0072f70bdf9?q=80&w=800&auto=format&fit=crop",
+    url: Commercial_3,
     alt: "Office Renovation"
   },
   {
@@ -64,7 +67,7 @@ const CommercialBuilding = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/20"></div>
           <img 
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1700&auto=format&fit=crop"
+            src= {Commercial_1}
             alt="Commercial Building"
             className="w-full h-full object-cover"
           />
@@ -103,9 +106,9 @@ const CommercialBuilding = () => {
             
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1629207338691-e0072f70bdf9?q=80&w=800&auto=format&fit=crop" 
+                src= {Commercial_Building_1}
                 alt="Commercial Construction" 
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

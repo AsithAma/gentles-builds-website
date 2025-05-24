@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
 import { toast } from '@/components/ui/use-toast';
+import { ChevronDown } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -106,22 +106,27 @@ const ContactForm = () => {
           <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
             Service Interested In
           </label>
-          <select
-            id="service"
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-construction-500 focus:border-construction-500 transition-colors"
-          >
-            <option value="">Select a Service</option>
-            <option value="Home Extensions">Home Extensions</option>
-            <option value="Domestic Building">Domestic Building</option>
-            <option value="New Builds">New Builds</option>
-            <option value="Garden Walls & Landscaping">Garden Walls & Landscaping</option>
-            <option value="Commercial Building">Commercial Building</option>
-            <option value="Loft Conversions">Loft Conversions</option>
-            <option value="Other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              id="service"
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              className="w-full px-4 py-3 pr-10 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-construction-500 focus:border-construction-500 transition-colors appearance-none bg-white"
+            >
+              <option value="">Select a Service</option>
+              <option value="Home Extensions">Home Extensions</option>
+              <option value="Domestic Building">Domestic Building</option>
+              <option value="New Builds">New Builds</option>
+              <option value="Garden Walls & Landscaping">Garden Walls & Landscaping</option>
+              <option value="Commercial Building">Commercial Building</option>
+              <option value="Loft Conversions">Loft Conversions</option>
+              <option value="Other">Other</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-construction-500">
+              <ChevronDown size={18} />
+            </div>
+          </div>
         </div>
       </div>
       

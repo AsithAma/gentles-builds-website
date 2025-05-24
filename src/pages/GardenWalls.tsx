@@ -1,9 +1,16 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Check } from 'lucide-react';
+import Garden_1 from "../assets/Garden 1.avif";
+import Garden_2 from "../assets/Garden 2.avif";
+import Garden_3 from "../assets/Garden 3.avif";
+import Garden_4 from "../assets/Garden 4.avif";
+import Our_Services from "../assets/Our Services.avif";
+import Garden_5 from "../assets/Garden 5.jpg";
+import Garden_6 from "../assets/Garden 6.jpg";
+import Garden_7 from "../assets/Garden 7.jpg";
 
 const galleryImages = [
   {
@@ -13,27 +20,27 @@ const galleryImages = [
   },
   {
     id: "garden2",
-    url: "https://images.unsplash.com/photo-1598889406127-01d14e2c0a36?q=80&w=800&auto=format&fit=crop",
+    url: Garden_2,
     alt: "Landscaped Garden"
   },
   {
     id: "garden3",
-    url: "https://images.unsplash.com/photo-1598889406236-5c1ce14173f1?q=80&w=800&auto=format&fit=crop",
+    url: Garden_3,
     alt: "Garden Patio Design"
   },
   {
     id: "garden4",
-    url: "https://images.unsplash.com/photo-1612278003486-4b947834ecd7?q=80&w=800&auto=format&fit=crop",
+    url: Garden_4,
     alt: "Garden Wall Feature"
   },
   {
     id: "garden5",
-    url: "https://images.unsplash.com/photo-1512392413544-5c718faadcfc?q=80&w=800&auto=format&fit=crop",
+    url: Our_Services,
     alt: "Garden Landscaping"
   },
   {
     id: "garden6",
-    url: "https://images.unsplash.com/photo-1508502950768-7c3c070781a0?q=80&w=800&auto=format&fit=crop",
+    url: Garden_5,
     alt: "Garden Design"
   },
 ];
@@ -99,9 +106,9 @@ const GardenWalls = () => {
             
             <div className="order-1 lg:order-2 rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1598889406127-01d14e2c0a36?q=80&w=800&auto=format&fit=crop" 
+                src= {Garden_7}
                 alt="Garden Landscaping" 
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -149,7 +156,7 @@ const GardenWalls = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1 rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1598889406236-5c1ce14173f1?q=80&w=800&auto=format&fit=crop" 
+                src={Garden_6}
                 alt="Garden Patio" 
                 className="w-full h-full object-cover"
               />

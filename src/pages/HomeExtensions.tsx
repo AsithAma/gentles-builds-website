@@ -4,11 +4,13 @@ import Layout from '@/components/Layout';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Building, Check } from 'lucide-react';
+import Home_1 from "../assets/Home 1.avif";
+import Home_Extension_Project_1 from "../assets/Home Extension Project 1.avif"
 
 const galleryImages = [
   {
     id: "ext1",
-    url: "https://images.unsplash.com/photo-1604748308951-5d8fad4e5205?q=80&w=800&auto=format&fit=crop",
+    url: Home_Extension_Project_1,
     alt: "Home Extension Project 1"
   },
   {
@@ -55,7 +57,7 @@ const HomeExtensions = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/20"></div>
           <img 
-            src="https://images.unsplash.com/photo-1604748308951-5d8fad4e5205?q=80&w=1700&auto=format&fit=crop"
+            src={Home_1}
             alt="Home Extensions"
             className="w-full h-full object-cover"
           />

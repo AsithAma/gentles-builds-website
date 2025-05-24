@@ -31,54 +31,60 @@ const Contact = () => {
       
       <section className="py-16 px-4 md:px-8">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
-              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center flex flex-col h-auto">
+              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Our Location</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-2">Our Location</h3>
+              <p className="text-gray-600 flex-grow">
                 {companyAddress}
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
-              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center flex flex-col h-auto">
+              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Phone Number</h3>
-              <p className="text-gray-600">
-                +44 029 2000 0000
-              </p>
-              <p className="text-gray-600 mt-2">
-                +44 077 1234 5678
-              </p>
+              <h3 className="text-xl font-bold mb-2">Phone Number</h3>
+              <div className="flex-grow">
+                <p className="text-gray-600">
+                  +44 029 2000 0000
+                </p>
+                <p className="text-gray-600 mt-2">
+                  +44 077 1234 5678
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
-              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center flex flex-col h-auto">
+              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Email Address</h3>
-              <p className="text-gray-600">
-                info@gentlesconstruction.com
-              </p>
-              <p className="text-gray-600 mt-2">
-                enquiries@gentlesconstruction.com
-              </p>
+              <h3 className="text-xl font-bold mb-2">Email Address</h3>
+              <div className="flex-grow">
+                <p className="text-gray-600">
+                  info@gentlesconstruction.com
+                </p>
+                <p className="text-gray-600 mt-2">
+                  enquiries@gentlesconstruction.com
+                </p>
+              </div>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center">
-              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-construction transition-all duration-300 text-center flex flex-col h-auto">
+              <div className="w-16 h-16 bg-construction-100 text-construction-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Working Hours</h3>
-              <p className="text-gray-600">
-                Monday - Friday: 8:00AM - 5:00PM
-              </p>
-              <p className="text-gray-600 mt-2">
-                Saturday: 9:00AM - 1:00PM
-              </p>
+              <h3 className="text-xl font-bold mb-2">Working Hours</h3>
+              <div className="flex-grow">
+                <p className="text-gray-600">
+                  Monday - Friday: 8:00AM - 5:00PM
+                </p>
+                <p className="text-gray-600 mt-2">
+                  Saturday: 9:00AM - 1:00PM
+                </p>
+              </div>
             </div>
           </div>
         </div>

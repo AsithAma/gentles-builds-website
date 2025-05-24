@@ -1,14 +1,16 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Check } from 'lucide-react';
+import New_Build_1 from "../assets/New Builds 1.avif";
+import New_Build_3 from "../assets/New Builds 3.avif";
+import New_Build_4 from "../assets/New Builds 4.avif";
 
 const galleryImages = [
   {
     id: "new1",
-    url: "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=800&auto=format&fit=crop",
+    url: New_Build_3,
     alt: "New Build Project"
   },
   {
@@ -18,7 +20,7 @@ const galleryImages = [
   },
   {
     id: "new3",
-    url: "https://images.unsplash.com/photo-1617850687380-3b118b269861?q=80&w=800&auto=format&fit=crop",
+    url: New_Build_4,
     alt: "Residential New Build"
   },
   {
@@ -67,9 +69,9 @@ const NewBuilds = () => {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/20"></div>
           <img 
-            src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=1700&auto=format&fit=crop"
+            src={New_Build_1}
             alt="New Builds"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
         

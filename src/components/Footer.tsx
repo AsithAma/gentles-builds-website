@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Building, Phone, Mail, MapPin, ArrowRight, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import CompanyLogo from '../assets/Gentles Construction Logo.avif';
 
 const Footer = () => {
   return (
@@ -11,7 +11,6 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2">
-              <Building size={30} className="text-construction-500" strokeWidth={1.5} />
               <span className="font-montserrat font-bold text-2xl">
                 Gentles <span className="text-white">Construction</span>
               </span>
@@ -21,32 +20,20 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://web.facebook.com/GentlesConstructionLtd?_rdc=1&_rdr#"
+                target="_blank"
                 className="bg-gray-800 hover:bg-construction-500 rounded-full p-2 transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
               <a 
-                href="#" 
-                className="bg-gray-800 hover:bg-construction-500 rounded-full p-2 transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a 
-                href="#" 
+                href="https://www.instagram.com/gentlesconstruction_" 
+                target="_blank"
                 className="bg-gray-800 hover:bg-construction-500 rounded-full p-2 transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
-              </a>
-              <a 
-                href="#" 
-                className="bg-gray-800 hover:bg-construction-500 rounded-full p-2 transition-colors duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
               </a>
             </div>
           </div>
@@ -77,12 +64,6 @@ const Footer = () => {
                 <Link to="/contact" className="text-gray-300 hover:text-construction-500 transition-colors flex items-center gap-2">
                   <ArrowRight size={14} className="text-construction-500" />
                   Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-construction-500 transition-colors flex items-center gap-2">
-                  <ArrowRight size={14} className="text-construction-500" />
-                  Gallery
                 </Link>
               </li>
               <li>
@@ -147,11 +128,11 @@ const Footer = () => {
               </li>
               <li className="flex gap-3">
                 <Phone size={20} className="text-construction-500 flex-shrink-0" />
-                <span className="text-gray-300">+44 029 2000 0000</span>
+                <span className="text-gray-300">+44 02921 200126 / 07866 957229</span>
               </li>
               <li className="flex gap-3">
                 <Mail size={20} className="text-construction-500 flex-shrink-0" />
-                <span className="text-gray-300">info@gentlesconstruction.com</span>
+                <span className="text-gray-300">gentlesconstruction@hotmail.co.uk</span>
               </li>
             </ul>
           </div>

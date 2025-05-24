@@ -4,6 +4,9 @@ import Layout from '@/components/Layout';
 import Gallery from '@/components/Gallery';
 import CallToAction from '@/components/CallToAction';
 import { Check } from 'lucide-react';
+import Loft_1 from "../assets/Loft Bedroom.avif";
+import Loft_2 from "../assets/Loft 1.jpg";
+import Loft_3 from "../assets/Loft 2.jpg";
 
 const galleryImages = [
   {
@@ -28,12 +31,12 @@ const galleryImages = [
   },
   {
     id: "loft5",
-    url: "https://images.unsplash.com/photo-1617850687380-3b118b269861?q=80&w=800&auto=format&fit=crop",
+    url: Loft_1,
     alt: "Dormer Loft Conversion"
   },
   {
     id: "loft6",
-    url: "https://images.unsplash.com/photo-1619887052899-256ee3c26f98?q=80&w=800&auto=format&fit=crop",
+    url: Loft_3,
     alt: "Mansard Loft Conversion"
   },
 ];
@@ -107,9 +110,9 @@ const LoftConversions = () => {
             
             <div className="order-1 lg:order-2 rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1617850687380-3b118b269861?q=80&w=800&auto=format&fit=crop" 
+                src= {Loft_2}
                 alt="Loft Conversion" 
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -148,7 +151,7 @@ const LoftConversions = () => {
               <img 
                 src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?q=80&w=800&auto=format&fit=crop" 
                 alt="Attic Bedroom Conversion" 
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               />
             </div>
             
